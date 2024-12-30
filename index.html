@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="./assets/profil.png" alt="Photo de profil" class="profile-img">
+        <h1>Clément LAVALLOIR</h1>
+        <p>Développeur Web</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2 class="section-title">À propos</h2>
+        <p>Développeur junior passionné par la création d'applications web modernes. Mon parcours m'a permis d'acquérir une solide base technique tout en développant ma capacité à apprendre rapidement de nouvelles technologies.
+            Actuellement à la recherche de nouvelles opportunités, je souhaite rejoindre une équipe dynamique où je pourrai contribuer à des projets innovants tout en continuant à développer mes compétences.
+            En dehors du code, je m'intéresse particulièrement à [vos centres d'intérêt liés au développement] et participe régulièrement à [meetups/projets personnels/formations]."
+            Souhaitez-vous personnaliser certains aspects de ce texte ?</p>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title">Compétences</h2>
+        <div class="skills">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">PHP</div>
+            <div class="skill">MYSQL</div>
+            <div class="skill">Symphony</div>
+            <div class="skill">WordPress</div>
+            <div class="skill">PhotoShop</div>
+            <div class="skill">Indesign</div>
+            <div class="skill">Illustrator</div>
+            <div class="skill">Figma</div>
+            <div class="skill">Git</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">Mes Projets</h2>
+        <div class="projects">
+            <article class="project">
+                <a href="./Projet2Globe_Trotteur/index.html" target="_blank">
+                <img src="./Projet2Globe_Trotteur/assets/img/Logo_GlobeTrotteurs-SB.png" alt="Projet 1" class="project-img">
+                <div class="project-content">
+                    <h3>Globe Trotteur</h3>
+                    <p>Premier projet sur une agence de voyage en from scratch. Création de logo, charte graphique
+                        (typographie,colorimétrie).
+                    </p>
+                </div></a>
+            
+            </article>
+            <article class="project">
+                <img src="./assets/developpement.jpg" alt="Projet 2" class="project-img">
+                <div class="project-content">
+                    <h3>Base de donnée</h3>
+                    <p>En cours de dévloppement</p>
+                </div>
+            </article>
+            <article class="project">
+                <img src="./assets/developpement.jpg" alt="Projet 3" class="project-img">
+                <div class="project-content">
+                    <h3>Wordpress</h3>
+                    <p>En cours de développement</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Contact</h2>
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Nom</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Portfolio LAVALLOIR Clément. Tous droits réservés.</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
