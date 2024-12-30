@@ -93,10 +93,19 @@
             overflow: hidden;
             box-shadow: 0 3px 10px rgba(0,0,0,0.1);
             
-        }
-        span:hover{
-            color :#2980b9
             
+            
+        }
+        .border:hover{
+            box-shadow: 0 3px 10px #3498db;
+            
+            
+        }
+        span {
+            color: #2c3e50 ;
+        }
+        span:hover {
+            color: #3498db;
         }
         .project-img {
             width: 100%;
