@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de Connexion</title>
+    <link rel="stylesheet" href="log.css">
+</head> 
+<body>
+    <div class="login-card">
+        <div class="login-header">
+            <h1>Connexion</h1>
+            <p>Entrez vos identifiants pour accéder à votre compte</p>
+        </div>
+        <form id="loginForm">
+            <div class="form-group">
+                <i>📧</i>
+                <input 
+                    type="email" 
+                    id="email" 
+                    class="form-input" 
+                    placeholder="Email"
+                    required
+                >
+                <div class="error-message" id="emailError"></div>
+            </div>
+            <div class="form-group">
+                <i>🔒</i>
+                <input 
+                    type="password" 
+                    id="password" 
+                    class="form-input" 
+                    placeholder="Mot de passe"
+                    required
+                >
+                <div class="error-message" id="passwordError"></div>
+            </div>
+            <div class="form-options">
+                <label class="remember-me">
+                    <input type="checkbox" id="remember">
+                    <span>Se souvenir de moi</span>
+                </label>
+                <a href="#" class="forgot-password">Mot de passe oublié?</a>
+            </div>
+            <button type="submit" class="login-button">Se connecter</button>
+            <a href="../afterlog/afterlog.html" class="forgot-password">apres log</a>
+            <div class="register-link">
+                Pas encore de compte? <a href="../newlog/newlog.html">S'inscrire</a>
+            </div>
+        </form>
+    </div>
+
+    <script src="log.js"></script>
+</body>
+</html>

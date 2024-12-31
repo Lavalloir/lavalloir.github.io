@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="newlog.css">
+</head>
+<body>
+    <div class="signup-card">
+        <div class="signup-header">
+            <h1>Créer un compte</h1>
+            <p>Remplissez les informations ci-dessous pour vous inscrire</p>
+        </div>
+        <form id="signupForm">
+            <div class="name-group">
+                <div class="form-group">
+                    <i>👤</i>
+                    <input 
+                        type="text" 
+                        id="firstName" 
+                        class="form-input" 
+                        placeholder="Prénom"
+                        required
+                    >
+                </div>
+                <div class="form-group">
+                    <i>👤</i>
+                    <input 
+                        type="text" 
+                        id="lastName" 
+                        class="form-input" 
+                        placeholder="Nom"
+                        required
+                    >
+                </div>
+            </div>
+            <div class="form-group">
+                <i>📧</i>
+                <input 
+                    type="email" 
+                    id="email" 
+                    class="form-input" 
+                    placeholder="Email"
+                    required
+                >
+                <div class="error-message" id="emailError"></div>
+            </div>
+            <div class="form-group">
+                <i>🔒</i>
+                <input 
+                    type="password" 
+                    id="password" 
+                    class="form-input" 
+                    placeholder="Mot de passe"
+                    required
+                >
+                <div class="error-message" id="passwordError"></div>
+                <div class="password-requirements">
+                    <div class="requirement" id="lengthReq">Au moins 8 caractères</div>
+                    <div class="requirement" id="upperReq">Une majuscule</div>
+                    <div class="requirement" id="lowerReq">Une minuscule</div>
+                    <div class="requirement" id="numberReq">Un chiffre</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <i>🔒</i>
+                <input 
+                    type="password" 
+                    id="confirmPassword" 
+                    class="form-input" 
+                    placeholder="Confirmer le mot de passe"
+                    required
+                >
+                <div class="error-message" id="confirmPasswordError"></div>
+            </div>
+            <div class="terms">
+                <label>
+                    <input type="checkbox" id="terms" required>
+                    J'accepte les <a href="#">conditions d'utilisation</a> et la <a href="#">politique de confidentialité</a>
+                </label>
+            </div>
+            <button type="submit" class="signup-button">S'inscrire</button>
+            <div class="login-link">
+                Déjà inscrit? <a href="../log/log.html">Se connecter</a>
+            </div>
+        </form>
+    </div>
+
+    <script src="newlog.js"></script>
+</body>
+</html>
