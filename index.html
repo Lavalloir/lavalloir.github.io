@@ -1,96 +1,158 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mon Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <img src="./assets/profil.png" alt="Photo de profil" class="profile-img">
-        <h1>Clément LAVALLOIR</h1>
-        <p>Développeur Web</p>
+      <img
+        src="./assets/profil.png"
+        alt="Photo de profil"
+        class="profile-img"
+      />
+      <h1>Clément LAVALLOIR</h1>
+      <p>Développeur Web</p>
     </header>
 
     <nav>
-        <ul>
-            <li><a href="#about">À propos</a></li>
-            <li><a href="#skills">Compétences</a></li>
-            <li><a href="#projects">Projets</a></li>
-        </ul>
+      <ul>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#projects">Projets</a></li>
+      </ul>
     </nav>
 
     <section id="about">
-        <h2 class="section-title">À propos</h2>
-        <p class="section-about">Développeur junior passionné par la création d'applications web modernes. <br> 
-            Ma formation me permet d'acquérir de solides bases techniques tout en développant ma capacité à apprendre rapidement de nouvelles technologies. <br>
-            Actuellement à la recherche d'un stage pour finaliser ma formation, je souhaite rejoindre une équipe dynamique où je pourrai contribuer à des projets innovants tout en continuant à développer mes compétences.
-            </p>
+      <h2 class="section-title">À propos</h2>
+      <p class="section-about">
+        Développeur junior passionné par la création d'applications web
+        modernes. <br />
+        Ma formation me permet d'acquérir de solides bases techniques tout en
+        développant ma capacité à apprendre rapidement de nouvelles
+        technologies. <br />
+        Actuellement à la recherche d'un stage pour finaliser ma formation, je
+        souhaite rejoindre une équipe dynamique où je pourrai contribuer à des
+        projets innovants tout en continuant à développer mes compétences.
+      </p>
     </section>
+    <div class="container">
+      <section id="cv">
+        <div class="cv">
+          <img
+            src="./assets/CV_lavalloir_clement1.jpg"
+            alt="CV Clément LAVALLOIR"
+          />
+        </div>
 
-    <section id="skills">
+        <div class="cvL">
+          <div class="show">
+            <a
+              href="./assets/CV_lavalloir_clement.jpg"
+              class="button"
+              target="_blank"
+              >Ouvrir ></a
+            >
+          </div>
+          <div class="dl">
+            <a
+              href="./assets/CV_lavalloir_clement.jpg"
+              class="button"
+              download="cv_lavalloir_clement.jpg"
+              >Télécharger ></a
+            >
+          </div>
+        </div>
+      </section>
+      <section id="skills">
         <h2 class="section-title">Compétences</h2>
         <div class="skills">
-            <div class="skill">HTML</div>
-            <div class="skill">CSS</div>
-            <div class="skill">JavaScript</div>
-            <div class="skill">PHP</div>
-            <div class="skill">MYSQL</div>
-            <div class="skill">Symphony</div>
-            <div class="skill">WordPress</div>
-            <div class="skill">PhotoShop</div>
-            <div class="skill">Indesign</div>
-            <div class="skill">Illustrator</div>
-            <div class="skill">Figma</div>
-            <div class="skill">Git</div>
+          <div class="skill">HTML</div>
+          <div class="skill">CSS</div>
+          <div class="skill">JavaScript</div>
+          <div class="skill">PHP</div>
+          <div class="skill">MYSQL</div>
+          <div class="skill">Symphony</div>
+          <div class="skill">WordPress</div>
+          <div class="skill">PhotoShop</div>
+          <div class="skill">Indesign</div>
+          <div class="skill">Illustrator</div>
+          <div class="skill">Figma</div>
+          <div class="skill">Git</div>
         </div>
-    </section>
-
+      </section>
+    </div>
     <section id="projects">
-        <h2 class="section-title">Projets</h2>
-        <div class="projects">
-            <article class="project border pointer">
-                <a href="./Projet2Globe_Trotteur/index.html" target="_blank">
-                <img src="./Projet2Globe_Trotteur/assets/img/Logo_GlobeTrotteurs-SB.png" alt="Projet 1" class="project-img">
-                <div class="project-content">
-                    <h3>Globe Trotteur</h3>
-                    <p>Premier projet sur une agence de voyage fictive en from scratch. Création de logo, charte graphique
-                    </p>
-                    <a href="./Projet2Globe_Trotteur/index.html" class="button" target="_blank">En savoir plus ></a>
-                </div></a>
-            
-            </article>
-            <article class="project border pointer">
-                <a href="./BDD/index.html" target="_blank">
-                <img src="./assets/php.jpg" alt="Projet 2" class="project-img">
-                <div class="project-content">
-                    <h3>Base de données</h3>
-                    <p>En cours de dévloppement... <br>
-                    Création d'une BDD en php, mysql, analyse merise, mariadb</p>
-                    <a href="./BDD/index.html" class="button" target="_blank">En savoir plus ></a>
-
-                </div></a>
-            </article>
-            <article class="project">
-                <img src="./assets/wordpress.jpg" alt="Projet 3" class="project-img">
-                <div class="project-content">
-                    <h3>Wordpress</h3>
-                    <p>Prochainement</p>
-                </div>
-            </article>
-            <article class="project">
-                <img src="./assets/developpement.jpg" alt="Projet 3" class="project-img">
-                <div class="project-content">
-                    <h3>Symfony</h3>
-                    <p>Prochainement</p>
-                </div>
-            </article>
-        </div>
+      <h2 class="section-title">Projets</h2>
+      <div class="projects">
+        <article class="project border pointer">
+          <a href="./Projet2Globe_Trotteur/index.html" target="_blank">
+            <img
+              src="./Projet2Globe_Trotteur/assets/img/Logo_GlobeTrotteurs-SB.png"
+              alt="Projet 1"
+              class="project-img"
+            />
+            <div class="project-content">
+              <h3>Globe Trotteur</h3>
+              <p>
+                Premier projet sur une agence de voyage fictive en from scratch.
+                Création de logo, charte graphique
+              </p>
+              <a
+                href="./Projet2Globe_Trotteur/index.html"
+                class="button"
+                target="_blank"
+                >En savoir plus ></a
+              >
+            </div></a
+          >
+        </article>
+        <article class="project border pointer">
+          <a href="./BDD/index.html" target="_blank">
+            <img src="./assets/php.jpg" alt="Projet 2" class="project-img" />
+            <div class="project-content">
+              <h3>Base de données</h3>
+              <p>
+                En cours de dévloppement... <br />
+                Création d'une BDD en php, mysql, analyse merise, mariadb
+              </p>
+              <a href="./BDD/index.html" class="button" target="_blank"
+                >En savoir plus ></a
+              >
+            </div></a
+          >
+        </article>
+        <article class="project">
+          <img
+            src="./assets/wordpress.jpg"
+            alt="Projet 3"
+            class="project-img"
+          />
+          <div class="project-content">
+            <h3>Wordpress</h3>
+            <p>Prochainement</p>
+          </div>
+        </article>
+        <article class="project">
+          <img
+            src="./assets/developpement.jpg"
+            alt="Projet 3"
+            class="project-img"
+          />
+          <div class="project-content">
+            <h3>Symfony</h3>
+            <p>Prochainement</p>
+          </div>
+        </article>
+      </div>
     </section>
     <footer>
-        <p>&copy; 2024 Portfolio LAVALLOIR Clément. Tous droits réservés.</p>
+      <p>&copy; 2024 Portfolio LAVALLOIR Clément. Tous droits réservés.</p>
     </footer>
+
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
