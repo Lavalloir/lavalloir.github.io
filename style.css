@@ -51,6 +51,9 @@
             text-decoration: none;
             font-weight: 500;
         }
+        nav a:hover {
+            color: #3498db ;
+        }
 
         section {
             padding: 4rem 2rem;
@@ -78,6 +81,10 @@
             border-radius: 25px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
+        .skill:hover {
+            background: linear-gradient(to right, #2c3e50, #3498db);
+            color: black;
+        }
 
         .projects {
             display: grid;
@@ -85,9 +92,11 @@
             gap: 2rem;
             padding: 0 1rem;
         }
-        
-        .project {
+        .pointer {
             cursor: pointer;
+
+        }
+        .project {
             background: white;
             border-radius: 10px;
             overflow: hidden;
@@ -100,6 +109,23 @@
             box-shadow: 0 3px 10px 0 #3498db;
             
             
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            background: linear-gradient(to right, #2c3e50, #3498db);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 16px;
+            margin-top: 10px;
+            transition: 0.5s;
+            position: bottom;
+        }
+        .button:hover {
+            background: linear-gradient(to right, #3498db, #2c3e50 );
+            transform: translateY(2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         span {
             color: #2c3e50 ;
