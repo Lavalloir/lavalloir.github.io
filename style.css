@@ -1,3 +1,20 @@
+.projects {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.project {
+  width: 100%;
+}
+
+/* Pour centrer le dernier projet par rapport à la page entière */
+.project.center {
+  grid-column: 1 / -1; /* Étend sur toutes les colonnes */
+  width: calc(25% - 15px); /* Même largeur qu'un seul élément (25% moins une partie du gap) */
+  justify-self: center; /* Centre l'élément horizontalement */
+  margin: 0 auto; /* Centre supplémentaire */
+}
 * {
   margin: 0;
   padding: 0;
@@ -127,6 +144,7 @@ section {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   padding: 0 1rem;
+  align-items: center;
 }
 .pointer {
   cursor: pointer;
