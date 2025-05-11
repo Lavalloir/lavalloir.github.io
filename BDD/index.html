@@ -1,123 +1,55 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Globe Trotteur</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <h1>Globe Trotteur</h1>
-            <div>
-                <a href="#destinations">Destinations</a>
-                <a href="#about">À propos</a>
-                <a href="#contact">Contact</a>
-                <a href="log/log.html">Connexion</a>
-            </div>
-        </nav>
-    </header>
-
-    <section class="hero">
-        <div class="hero-content">
-            <h2>Trouvez votre prochaine destination</h2>
-            <div class="search-box">
-                <div class="search-inputs">
-                    <div class="input-group">
-                        <input type="text" placeholder="Destination">
-                    </div>
-                    <div class="input-group">
-                        <input type="date" placeholder="Date de départ">
-                    </div>
-                    <div class="input-group">
-                        <input type="date" placeholder="Date de retour">
-                    </div>
-                    <button class="search-button">Rechercher</button>
-                </div>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="slider">
+        
+        <div class="item">
+          <img src="images/1.png" width="1000" alt="" />
         </div>
-    </section>
-
-    <section id="destinations" class="destinations">
-        <h2>Destinations populaires</h2>
-        <div class="destination-grid">
-            <div class="destination-card">
-                <img src="/api/placeholder/300/200" alt="Paris">
-                <div class="destination-card-content">
-                    <h3>Paris</h3>
-                    <p>À partir de 499€</p>
-                    <button class="book-button">Réserver</button>
-                </div>
-            </div>
-            <div class="destination-card">
-                <img src="/api/placeholder/300/200" alt="Bali">
-                <div class="destination-card-content">
-                    <h3>Bali</h3>
-                    <p>À partir de 899€</p>
-                    <button class="book-button">Réserver</button>
-                </div>
-            </div>
-            <div class="destination-card">
-                <img src="/api/placeholder/300/200" alt="New York">
-                <div class="destination-card-content">
-                    <h3>New York</h3>
-                    <p>À partir de 799€</p>
-                    <button class="book-button">Réserver</button>
-                </div>
-            </div>
+        <div class="item">
+          <img src="images/2.png" width="1000" alt="" />
         </div>
-    </section>
-
-    <section id="about" class="about">
-        <div class="about-content">
-            <h2>À propos de nous</h2>
-            <p>Globe Trotteur est votre partenaire de confiance pour organiser des voyages inoubliables. Nous sélectionnons les meilleures destinations et offrons des prix compétitifs.</p>
+        <div class="item">
+          <img src="images/3.png" width="1000" alt="" />
         </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <h2>Contactez-nous</h2>
-        <div class="contact-grid">
-            <form>
-                <input type="text" placeholder="Nom">
-                <input type="email" placeholder="Email">
-                <textarea rows="5" placeholder="Message"></textarea>
-                <button class="book-button">Envoyer</button>
-            </form>
-            <div>
-                <p>Téléphone: +33 1 23 45 67 89</p>
-                <p>Email: contact@GlobeTrotteur.fr</p>
-                <p>Adresse: 123 Rue du Voyage, 75001 Paris</p>
-            </div>
+        <div class="item">
+          <img src="images/4.png" width="1000" alt="" />
         </div>
-    </section>
-
-    <footer>
-        <div class="footer-content">
-            <div class="footer-column">
-                <h3>Globe Trotteur</h3>
-                <p>Votre partenaire de voyage depuis 2020</p>
-            </div>
-            <div class="footer-column">
-                <h3>Liens rapides</h3>
-                <ul class="footer-links">
-                    <li><a href="#destinations">Destinations</a></li>
-                    <li><a href="#about">À propos</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h3>Newsletter</h3>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Votre email">
-                    <button type="submit">OK</button>
-                </form>
-            </div>
+        <div class="item">
+          <img src="images/5.png" width="1000" alt="" />
         </div>
-    </footer>
+        <div class="item">
+          <img src="images/6.png" width="1000" alt="" />
+        </div>
+        <div class="item">
+          <img src="images/7.png" width="1000" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
 
-    
+    <div id="modalId" class="modal">
+      <img src="#" />
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
