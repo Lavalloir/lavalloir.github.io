@@ -1,55 +1,135 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="wrap">
-      <div class="slider">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP Natif - Screenshots - Clément LAVALLOIR</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header-section text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3">PHP Natif</h1>
+            <p class="lead">Base de Données & Développement Backend</p>
+        </div>
+    </div>
+
+    <!-- Informations du projet -->
+    <div class="container">
+        <div class="project-info">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h3 class="mb-3">À propos du projet</h3>
+                    <p class="mb-3">
+                        Développement d'une application web complète en PHP natif avec une base de données MySQL. 
+                        Ce projet illustre la maîtrise des concepts fondamentaux du développement web backend, 
+                        de la conception de base de données avec l'analyse Merise jusqu'à l'implémentation complète.
+                    </p>
+                    <h5>Fonctionnalités principales :</h5>
+                    <ul>
+                        <li>Architecture MVC (Model-View-Controller)</li>
+                        <li>Gestion complète des destinations (CRUD)</li>
+                        <li>Gestion complète des utilisateurs (CRUD)</li>
+                        <li>Système d'authentification sécurisé</li>
+                        <li>Interface d'administration</li>
+                        <li>Gestion de base de données relationnelle</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5>Technologies utilisées :</h5>
+                    <div class="mb-3">
+                        <span class="tech-badge">PHP</span>
+                        <span class="tech-badge">MySQL</span>
+                        <span class="tech-badge">MariaDB</span>
+                        <span class="tech-badge">HTML5</span>
+                        <span class="tech-badge">CSS3</span>
+                        <span class="tech-badge">JavaScript</span>
+                        <span class="tech-badge">Bootstrap</span>
+                        <span class="tech-badge">Analyse Merise</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Carrousel des screenshots -->
+    <div class="carousel-container">
         
-        <div class="item">
-          <img src="images/1.png" width="1000" alt="" />
+        <div id="phpCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#phpCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#phpCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#phpCarousel" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#phpCarousel" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#phpCarousel" data-bs-slide-to="4"></button>
+                <button type="button" data-bs-target="#phpCarousel" data-bs-slide-to="5"></button>
+                <button type="button" data-bs-target="#phpCarousel" data-bs-slide-to="6"></button>
+            </div>
+            
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/1.png" class="d-block w-100" alt="Screenshot 1" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="images/1.png">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/2.png" class="d-block w-100" alt="Screenshot 2" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="images/2.png">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/3.png" class="d-block w-100" alt="Screenshot 3" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="images/3.png">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/4.png" class="d-block w-100" alt="Screenshot 4" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="images/4.png">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/5.png" class="d-block w-100" alt="Screenshot 5" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="images/5.png">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/6.png" class="d-block w-100" alt="Screenshot 6" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="images/6.png">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/7.png" class="d-block w-100" alt="Screenshot 7" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="images/7.png">
+                </div>
+            </div>
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#phpCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Précédent</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#phpCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Suivant</span>
+            </button>
         </div>
-        <div class="item">
-          <img src="images/2.png" width="1000" alt="" />
-        </div>
-        <div class="item">
-          <img src="images/3.png" width="1000" alt="" />
-        </div>
-        <div class="item">
-          <img src="images/4.png" width="1000" alt="" />
-        </div>
-        <div class="item">
-          <img src="images/5.png" width="1000" alt="" />
-        </div>
-        <div class="item">
-          <img src="images/6.png" width="1000" alt="" />
-        </div>
-        <div class="item">
-          <img src="images/7.png" width="1000" alt="" />
-        </div>
-      </div>
     </div>
-  </div>
 
-    <div id="modalId" class="modal">
-      <img src="#" />
+    <!-- Modal pour affichage plein écran -->
+    <div class="modal fade" id="imageModal" tabindex="-1">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center p-0">
+                    <img src="" class="modal-fullscreen-image" alt="Screenshot en plein écran">
+                </div>
+            </div>
+        </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <!-- Footer avec liens d'action -->
+        <div class="container text-center pb-5 mt-3">
+            <a href="https://github.com/Lavalloir?tab=repositories&q=&type=public&language=&sort=" class="btn btn-outline-primary btn-lg" target="_blank">
+                <i class="bi bi-github"></i> Code source
+            </a>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
     <script src="index.js"></script>
-  </body>
+</body>
 </html>

@@ -1,57 +1,45 @@
-$(document).ready(function() {
-$('.slider').slick({
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  arrows: true,
-  dots: false,
-  centerMode: true,
-  variableWidth: true,
-  infinite: true,
-  focusOnSelect: true,
-  cssEase: 'linear',
-  touchMove: true,
-  prevArrow:'<button class="slick-prev"> < </button>',
-  nextArrow:'<button class="slick-next"> > </button>',
-  
-  //         responsive: [                        
-  //             {
-  //               breakpoint: 576,
-  //               settings: {
-  //                 centerMode: false,
-  //                 variableWidth: false,
-  //               }
-  //             },
-  //         ]
+
+// Mise à jour du compteur d'images
+const carousel = document.getElementById('phpCarousel');
+const currentImageSpan = document.getElementById('currentImage');
+
+carousel.addEventListener('slide.bs.carousel', function (e) {
+    currentImageSpan.textContent = e.to + 1;
 });
 
+// Gestion du modal pour l'affichage plein écran
+const imageModal = document.getElementById('imageModal');
+const modalImage = imageModal.querySelector('.modal-fullscreen-image');
 
-var imgs = $('.slider img');
-imgs.each(function(){
-  var item = $(this).closest('.item');
-  item.css({
-    'background-image': 'url(' + $(this).attr('src') + ')', 
-    'background-position': 'center',            
-    '-webkit-background-size': 'cover',
-    'background-size': 'cover', 
-  });
-  $(this).hide();
+imageModal.addEventListener('show.bs.modal', function (e) {
+    const imageSrc = e.relatedTarget.getAttribute('data-bs-image');
+    modalImage.src = imageSrc;
 });
 
-$('a[data-modal]').click(function(event) {
-    $(this).modal();
-    return false;
-  });
+// Navigation au clavier
+document.addEventListener('keydown', function(e) {
+    const carouselInstance = bootstrap.Carousel.getOrCreateInstance(carousel);
+    
+    if (e.key === 'ArrowLeft') {
+        carouselInstance.prev();
+    } else if (e.key === 'ArrowRight') {
+        carouselInstance.next();
+    } else if (e.key === 'Escape') {
+        // Fermer le modal si ouvert, sinon retourner au portfolio
+        const modalInstance = bootstrap.Modal.getInstance(imageModal);
+        if (modalInstance) {
+            modalInstance.hide();
+        } else {
+            window.location.href = 'index.html';
+        }
+    }
+});
 
-  // Modal
+// Pause au survol
+carousel.addEventListener('mouseenter', function() {
+    bootstrap.Carousel.getInstance(this).pause();
+});
 
-//   $('#showModal').click(() => {
-//     // $('#modalId').modal();
-//     // console.log($(this))
-//   });
-    $('.slider .item').click(function() {
-        console.log(this)
-        $('#modalId img')[0].src = $(this).find('img')[0].src;
-        $('#modalId').modal();
-    });
-  
+carousel.addEventListener('mouseleave', function() {
+    bootstrap.Carousel.getInstance(this).cycle();
 });

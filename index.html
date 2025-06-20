@@ -1,182 +1,221 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mon Portfolio</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio - Clément LAVALLOIR</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    
 
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <img
-        src="./assets/profil.png"
-        alt="Photo de profil"
-        class="profile-img"
-      />
-      <h1>Clément LAVALLOIR</h1>
-      <p>Développeur Web</p>
+</head>
+<body>
+    <!-- Header Hero Section -->
+    <header class="hero-section text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <img src="./assets/profil.png" alt="Photo de profil" class="profile-img rounded-circle mb-4 border border-3 border-white">
+                    <h1 class="display-4 fw-bold mb-3">Clément LAVALLOIR</h1>
+                    <p class="lead fs-3">Développeur Web</p>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <nav>
-      <ul>
-        <li><a href="#about">À propos</a></li>
-        <li><a href="#skills">Compétences</a></li>
-        <li><a href="#projects">Projets</a></li>
-      </ul>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about"><i class="bi bi-person"></i> À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills"><i class="bi bi-tools"></i> Compétences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects"><i class="bi bi-folder"></i> Projets</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <section id="about">
-      <h3 class="section-title">Hello !</h3>
-      <div class="section-about">
-        <p>
-          Bienvenue sur mon portfolio ! <br> Je suis Clément, Développeur Web Junior de 26 ans, et ici je vous présente mon parcours.
-        </p>
-        <p>
-          Je suis actuellement en train de finaliser ma formation de Développeur Web et Web Mobile à la CCI de Colmar, où j'ai acquis de solides bases techniques tout en développant ma capacité à apprendre de nouvelles technologies de manière autonome et efficace.
-        </p>
-        <p>
-          Dans le cadre de la poursuite de mes études, je suis à la recherche d'une alternance à partir de septembre. Mon objectif est intégrer une équipe dynamique avec laquelle je pourrai participer à des projets concrets et innovants, tout en continuant à progresser professionnellement.
-        </p>
-        <p>Au plaisir d'échanger avec vous prochainement !</p>
-      </div>
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <h2 class="section-title text-center display-5 mb-5">Hello !</h2>
+                    <div class="fade-in">
+                        <p class="fs-5 text-center mb-4">
+                            Bienvenue sur mon portfolio ! <br> Je suis Clément, Développeur Web Junior de 26 ans, et ici je vous présente mon parcours.
+                        </p>
+                        <p class="fs-6 mb-4">
+                            Je suis actuellement en train de finaliser ma formation de Développeur Web et Web Mobile à la CCI de Colmar, où j'ai acquis de solides bases techniques tout en développant ma capacité à apprendre de nouvelles technologies de manière autonome et efficace.
+                        </p>
+                        <p class="fs-6 mb-4">
+                            Dans le cadre de la poursuite de mes études, je suis à la recherche d'une alternance à partir de septembre. Mon objectif est intégrer une équipe dynamique avec laquelle je pourrai participer à des projets concrets et innovants, tout en continuant à progresser professionnellement.
+                        </p>
+                        <p class="fs-6 text-center fw-bold">Au plaisir d'échanger avec vous prochainement !</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <div class="container">
-      <section id="cv">
-        <div class="cv">
-          <img
-            src="./assets/cv_lavalloir_clement1.jpg"
-            alt="CV Clément LAVALLOIR"
-          />
+    <!-- CV and Skills Section -->
+    <section class="py-5 bg-light" id="skills">
+        <div class="container">
+            <div class="row g-5">
+                <!-- CV Section -->
+                <div class="col-lg-6">
+                    <div class="text-center">
+                        <img src="./assets/cv_lavalloir_clement1.jpg" alt="CV Clément LAVALLOIR" class="cv-image img-fluid mb-4">
+                        <div class="d-flex gap-3 justify-content-center flex-wrap">
+                            <a href="./assets/cv_lavalloir_clement.jpg" class="btn btn-custom" target="_blank">
+                                <i class="bi bi-eye"></i> Ouvrir
+                            </a>
+                            <a href="./assets/cv_lavalloir_clement.jpg" class="btn btn-outline-primary" download="cv_lavalloir_clement.jpg">
+                                <i class="bi bi-download"></i> Télécharger
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Skills Section -->
+                <div class="col-lg-6">
+                    <h2 class="section-title text-center mb-4">Compétences</h2>
+                    <div class="d-flex flex-wrap gap-2 justify-content-center">
+                        <span class="badge bg-light text-dark skill-badge fs-6 p-3">HTML</span>
+                        <span class="badge bg-light text-dark skill-badge fs-6 p-3">CSS</span>
+                        <span class="badge bg-light text-dark skill-badge fs-6 p-3">JavaScript</span>
+                        <span class="badge bg-light text-dark skill-badge fs-6 p-3">PHP</span>
+                        <span class="badge bg-light text-dark skill-badge fs-6 p-3">MySQL</span>
+                        <span class="badge bg-light text-dark skill-badge fs-6 p-3">Symfony</span>
+                        <span class="badge bg-light text-dark skill-badge fs-6 p-3">CodeIgniter</span>
+                        <span class="badge bg-light text-dark skill-badge fs-6 p-3">MVC/HMVC</span>
+                        <span class="badge bg-light text-dark skill-badge fs-6 p-3">Smarty</span>
+                        <span class="badge bg-light text-dark skill-badge fs-6 p-3">WordPress</span>
+                        <span class="badge bg-light text-dark skill-badge fs-6 p-3">PhotoShop</span>
+                        <span class="badge bg-light text-dark skill-badge fs-6 p-3">InDesign</span>
+                        <span class="badge bg-light text-dark skill-badge fs-6 p-3">Illustrator</span>
+                        <span class="badge bg-light text-dark skill-badge fs-6 p-3">Figma</span>
+                        <span class="badge bg-light text-dark skill-badge fs-6 p-3">Git</span>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="cvB">
-          <div>
-            <a
-              href="./assets/cv_lavalloir_clement.jpg"
-              class="button"
-              target="_blank"
-              >Ouvrir ></a
-            >
-          </div>
-
-          <div>
-            <a
-              href="./assets/cv_lavalloir_clement.jpg"
-              class="button"
-              download="cv_lavalloir_clement.jpg"
-              >Télécharger ></a
-            >
-          </div>
-        </div>
-      </section>
-      <section id="skills">
-        <h2 class="section-title">Compétences</h2>
-        <div class="skills">
-          <div class="skill">HTML</div>
-          <div class="skill">CSS</div>
-          <div class="skill">JavaScript</div>
-          <div class="skill">PHP</div>
-          <div class="skill">MYSQL</div>
-          <div class="skill">Symphony</div>
-          <div class="skill">CodeIgniter</div>
-          <div class="skill">MVC/HMVC</div>
-          <div class="skill">Smarty</div>
-          <div class="skill">WordPress</div>
-          <div class="skill">PhotoShop</div>
-          <div class="skill">Indesign</div>
-          <div class="skill">Illustrator</div>
-          <div class="skill">Figma</div>
-          <div class="skill">Git</div>
-        </div>
-      </section>
-    </div>
-    <section id="projects">
-      <h2 class="section-title">Projets</h2>
-      <div class="projects">
-        <article class="project border pointer">
-          <a href="./Projet2Globe_Trotteur/index.html" target="_blank">
-            <img
-              src="./Projet2Globe_Trotteur/assets/img/Logo_GlobeTrotteurs-SB.png"
-              alt="Projet 1"
-              class="project-img"
-            />
-            <div class="project-content">
-              <h3>Globe Trotteur</h3>
-              <p>
-                Premier projet sur une agence de voyage fictive en from scratch.
-                Création de logo, charte graphique
-              </p>
-              <a
-                href="./Projet2Globe_Trotteur/index.html"
-                class="button"
-                target="_blank"
-                >En savoir plus ></a
-              >
-            </div></a
-          >
-        </article>
-        <article class="project border pointer">
-          <a href="./BDD/index.html" target="_blank">
-            <img src="./assets/php.jpg" alt="Projet 2" class="project-img" />
-            <div class="project-content">
-              <h3>PHP Natif</h3>
-              <p>
-                En cours de dévloppement... <br />
-                Création d'une BDD en php, mysql, analyse merise, mariadb
-              </p>
-              <a href="./BDD/index.html" class="button" target="_blank"
-                >En savoir plus ></a
-              >
-            </div></a
-          >
-        </article>
-        <article class="project border pointer">
-          <img
-            src="./assets/wordpress.jpg"
-            alt="Projet 3"
-            class="project-img"
-          />
-          <div class="project-content">
-            <h3>Wordpress</h3>
-            <p>Refonte total du site de mon club de sport En Avant Colmar Badminton avec ACF Pro.</p>
-            <a href="https://en-avant-colmar-badminton.fr/" class="button" target="_blank"
-                >En savoir plus ></a>
-          </div>
-        </article>
-        <article class="project border pointer">
-          <img
-            src="./assets/developpement.jpg"
-            alt="Projet 3"
-            class="project-img"
-          />
-          <div class="project-content">
-            <h3>Symfony</h3>
-            <p>Logiciel de suivie de maintenance de nos véhicule <br>(en cours de finalisation)</p>
-            <a href="https://car-tracker.fr/" class="button" target="_blank"
-                >En savoir plus ></a>
-          </div>
-        </article>
-        <article class="project center">
-          <img
-            src="./assets/code.jpg"
-            alt="Projet 3"
-            class="project-img"
-          />
-          <div class="project-content">
-            <h3>CodeIgniter</h3>
-            <p>Project en HMVC Smarty CodeIgniter 4</p>
-            <p>Création d'un CMS simplifier comme élémentor pour admin</p>
-            <button class="button">En developpement</button>
-          </div>
-        </article>
-      </div>
     </section>
-    <footer>
-      <p>&copy; 2025 Portfolio LAVALLOIR Clément. Tous droits réservés.</p>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center display-5 mb-5">Projets</h2>
+            <div class="row g-4 d-flex align-items-stretch justify-content-center">
+                <!-- Project 1: Globe Trotteur -->
+                <div class="col-lg-4 col-md-6 d-flex">
+                    <div class="card project-card shadow-sm w-100">
+                        <img src="./Projet2Globe_Trotteur/assets/img/Logo_GlobeTrotteurs-SB.png" class="card-img-top project-img" alt="Globe Trotteur">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Globe Trotteur</h5>
+                            <p class="card-text flex-grow-1">
+                                Premier projet sur une agence de voyage fictive en from scratch.
+                                Création de logo, charte graphique
+                            </p>
+                            <a href="./Projet2Globe_Trotteur/index.html" class="btn btn-custom mt-auto" target="_blank">
+                                <i class="bi bi-arrow-right"></i> En savoir plus
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: PHP Natif -->
+                <div class="col-lg-4 col-md-6 d-flex">
+                    <div class="card project-card shadow-sm w-100">
+                        <img src="./assets/php.jpg" class="card-img-top project-img" alt="PHP Natif">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">PHP Natif</h5>
+                            <p class="card-text flex-grow-1">
+                                En cours de développement... <br>
+                                Création d'une BDD en php, mysql, analyse merise, mariadb
+                            </p>
+                            <a href="./BDD/index.html" class="btn btn-custom mt-auto" target="_blank">
+                                <i class="bi bi-arrow-right"></i> En savoir plus
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: WordPress -->
+                <div class="col-lg-4 col-md-6 d-flex">
+                    <div class="card project-card shadow-sm w-100">
+                        <img src="./assets/wordpress.jpg" class="card-img-top project-img" alt="WordPress">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">WordPress</h5>
+                            <p class="card-text flex-grow-1">
+                                Refonte totale du site de mon club de sport En Avant Colmar Badminton avec ACF Pro.
+                            </p>
+                            <a href="https://en-avant-colmar-badminton.fr/" class="btn btn-custom mt-auto" target="_blank">
+                                <i class="bi bi-arrow-right"></i> En savoir plus
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Symfony -->
+                <div class="col-lg-4 col-md-6 d-flex">
+                    <div class="card project-card shadow-sm w-100">
+                        <img src="./assets/developpement.jpg" class="card-img-top project-img" alt="Symfony">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Symfony</h5>
+                            <p class="card-text flex-grow-1">
+                                Logiciel de suivi de maintenance de nos véhicules <br>(en cours de finalisation)
+                            </p>
+                            <a href="https://car-tracker.fr/" class="btn btn-custom mt-auto" target="_blank">
+                                <i class="bi bi-arrow-right"></i> En savoir plus
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: CodeIgniter -->
+                <div class="col-lg-4 col-md-6 d-flex">
+                    <div class="card project-card shadow-sm w-100">
+                        <img src="./assets/code.jpg" class="card-img-top project-img" alt="CodeIgniter">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">CodeIgniter</h5>
+                            <p class="card-text flex-grow-1">
+                                Projet en HMVC Smarty CodeIgniter 4<br>
+                                Création d'un CMS simplifié comme Elementor pour admin
+                            </p>
+                            <button class="btn btn-outline-secondary mt-auto" disabled>
+                                <i class="bi bi-gear"></i> En développement
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2025 Portfolio LAVALLOIR Clément. Tous droits réservés.</p>
+                </div>
+            </div>
+        </div>
     </footer>
 
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
     <script src="index.js"></script>
-  </body>
+</body>
 </html>
